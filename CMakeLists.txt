@@ -17,7 +17,7 @@ set(SOURCES
     src/main.cpp
     src/NetworkSniffer.cpp
     src/PacketParser.cpp
-    src/TrafficAnalizer.cpp
+    src/TrafficAnalyzer.cpp
 )
 
 add_executable(${PROJECT_NAME} ${SOURCES})

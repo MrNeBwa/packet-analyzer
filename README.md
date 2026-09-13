@@ -9,16 +9,16 @@ A high-performance C++17 multi-threaded network packet analyzer built with `libp
 - **Traffic Analytics**: Aggregates throughput data, protocol distribution, and active host metrics.
 
 ## Architecture
-
+```
 [ Network Interface ] ---> ( NetworkSniffer )
-|
-[ ThreadSafeQueue ]
-|
-v
-( PacketParser Worker )
-|
-( TrafficAnalyzer Engine )
-
+                                   |
+                            [ ThreadSafeQueue ]
+                                   |
+                                   v
+                          ( PacketParser Worker )
+                                   |
+                          ( TrafficAnalyzer Engine )
+```
 
 ## Quick Start (CMake)
 

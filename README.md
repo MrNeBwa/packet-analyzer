@@ -27,14 +27,17 @@ v
 - CMake 3.16+
 - `libpcap-dev`
 
+#### Compile
 ```bash
 mkdir build && cd build
 cmake ..
 make
 sudo ./packet_analyzer eth0
+```
 
-Docker Setup
-Bash
+#### Docker Setup
 
+```bash
 docker build -t packet-analyzer .
 docker run --net=host --cap-add=NET_RAW packet-analyzer
+```
